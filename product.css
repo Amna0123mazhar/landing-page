@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Nav */
+.navbar {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  background: #007bff;
+  color: #fff;
+  height: 60px;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-container h1 {
+  font-size: 24px;
+}
+
+.nav-container .nav {
+  display: flex;
+}
+
+.nav-container .nav a {
+  margin: 0 20px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.nav-container .nav .active {
+  background: #fff;
+  color: #007bff;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.header {
+  width: 80%;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.container img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.container div h3 {
+  font-size: 36px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.container div h3::after {
+  content: "";
+  position: absolute;
+  background: #007bff;
+  height: 3px;
+  width: 130px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container div p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.container div a {
+  padding: 15px 30px;
+  background: #007bff;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.container div a:hover {
+  background-color: #0056b3;
+}
+
+.headphone {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  opacity: 0.1;
+  z-index: -1;
+  width: 150px;
+}
+
+/* Footer */
+footer {
+  background: #343a40;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+footer .main-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.main-container div h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.main-container div ul {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container div li {
+  margin-bottom: 10px;
+}
+
+.main-container div a {
+  color: #fff;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #555;
+  margin: 20px 0;
+  opacity: 0.4;
+}
+
+.headphone2 {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  opacity: 0.1;
+  z-index: -1;
+  width: 150px;
+}
+.abc{
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      overflow: hidden;
+}
